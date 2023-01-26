@@ -1,0 +1,66 @@
+@import url(./reset.css);
+
+* {
+    color: black;
+}
+
+a {
+    color: orange;
+}
+
+h1 {
+    color: blueviolet;
+}
+
+h2 {
+   color: green; 
+}
+
+.text-h1 {
+    color: red;
+}
+
+#tlo {
+    color: aquamarine;
+}
+
+p.tlo-text {
+    color: rosybrown;
+}
+
+p.tlo-text.first {
+    color: chartreuse;
+}
+
+.tlo-text.second, 
+.tlo-text.third {
+    color: cornflowerblue;
+}
+
+.person-ghost p {
+    color: coral;
+}
+
+.person-ghost .third {
+    color: aqua;
+}
+
+.ghost-of-kyiv * {
+    color: darkmagenta;
+}
+
+.ghost-of-kyiv-list > li {
+    color: darkolivegreen;
+}
+
+.ghost-of-kyiv-title ~ p {
+    color: yellowgreen;
+}
+
+.ghost-of-kyiv-title + p {
+    color: red;
+}
+
+[class*="__first"] {
+    color: hotpink;
+}
