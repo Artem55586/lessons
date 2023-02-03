@@ -1,0 +1,72 @@
+@import url(reset.css);
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5625rem;
+    color: #6C757D;
+}
+
+.main-container {
+    padding: 115px 15px 182px;
+    margin: 0 auto;
+}
+
+.second-container {
+    max-width: 816px;
+    margin: 0 auto;
+}
+
+h1 {
+    display: none;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 2.5rem;
+    color: #212529;
+    margin-bottom: 40px;
+}
+
+.first-title {
+    max-width: 400px;
+}
+
+.first-text-block {
+    margin-bottom: 80px;
+}
+
+.first-text-block-par-1 {
+    margin-bottom: 25px;
+}
+
+.second-title {
+    max-width: 605px;
+}
+
+img {
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.img {
+    margin-bottom: 80px;
+}
+
+.img-container {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 0px;
+}
+
+.img-container-first-img, 
+.img-container-second-img {
+    font-size: 16px;
+    width: 605px;
+}
