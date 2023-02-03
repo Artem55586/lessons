@@ -61,12 +61,18 @@ img {
 .img-container {
     display: inline-block;
     text-align: center;
+    max-width: 1440px;
     margin-bottom: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
     font-size: 0px;
 }
 
 .img-container-first-img, 
 .img-container-second-img {
-    font-size: 16px;
-    width: 605px;
+    margin: 0 auto;
+}
+
+.img-container-first-img {
+    margin-right: 30px;
 }
