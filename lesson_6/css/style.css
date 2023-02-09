@@ -1,0 +1,164 @@
+@import url(reset.css);
+
+/* Main page */
+
+.main-page-text {
+    font-size: 46px;
+    color: goldenrod;
+    margin-bottom: 70px;
+}
+
+a {
+    font-size: 36px;
+}
+
+li {
+    padding-bottom: 25px;
+}
+
+/* Page 1 */
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.79; /* 25/14 */
+    color: #6C757D;
+}
+
+[class*="__container"] {
+    max-width: 1270px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.page {
+    padding: 115px 0px 77px;
+}
+
+.second-page-container {
+    max-width: 816px;
+    margin: 0 auto 80px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6; /* 40/25 */
+    color: #212529;
+    margin-bottom: 40px;
+}
+
+.first-title {
+    max-width: 400px;
+}
+
+.second-title {
+    max-width: 605px;
+}
+
+.second-page-container p {
+    margin-bottom: 30px;
+}
+
+.image {
+    max-width: 100%;
+}
+
+.desert {
+    margin-bottom: 80px;
+}
+
+.images-container {
+    margin-bottom: 80px;
+    font-size: 0;
+}
+
+.first-image {
+    margin-right: 30px;
+}
+
+/* Page 2 */
+
+.second-page {
+    padding: 100px 0px 133px;
+}
+
+[class*="__container1"] {
+    max-width: 1470px;
+    padding: 0px 15px; 
+    margin: 0 auto;
+}
+
+.small-container {
+    max-width: 816px;
+    margin: 0 auto 100px;
+}
+
+.second-page-paragraph {
+    margin-bottom: 100px;
+}
+
+.medium-container {
+    max-width: 1240px;
+    margin: 0 auto 100px;
+    font-size: 0px;
+}
+
+.second-page-image {
+    max-width: 100%;
+}
+
+.clothes {
+    margin-bottom: 100px;
+}
+
+.small-container p {
+    margin-bottom: 30px;
+}
+
+/* Homework */
+
+.homework-main {
+    padding: 25px;
+}
+
+.homework-block {
+    margin-bottom: 70px;
+    border: 3px solid red;
+    outline: 5px solid goldenrod;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 7px green;
+    opacity: 0.4;
+}
+
+.homework-inline {
+    border: 5px dotted green;
+    outline: 7px dotted blue;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px 10px red;
+    opacity: 0.6;
+}
+
+.homework-image {
+    margin-top: 50px;
+    border: 7px dashed blueviolet;
+    outline: 10px dashed yellowgreen;
+    border-radius: 30%;
+    box-shadow: 7px 7px 10px 12px red;
+    opacity: 0.8;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: aqua;
+    box-shadow: inset 7px 7px 10px 12px red;
+}
+.homework-block:hover,
+.homework-inline:hover,
+.homework-image:hover {
+    visibility: hidden;
+}
