@@ -137,9 +137,8 @@ body {
 .homepage {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    background-image: linear-gradient(90deg, rgba(48, 86, 211, 0.08) 18.69%, rgba(48, 86, 211, 0) 100%);
-    background-image: url(../img/page3/speaker.png), url(../img/page3/Vector17.png), url(../img/page3/Vector18.png), linear-gradient(90deg, rgba(48, 86, 211, 0.08) 18.69%, rgba(48, 86, 211, 0) 100%);
-    background-position: 76% 50%, 100% 100%, 100% 100%;
+    background: rgb(244,247,255);
+    background: url(../img/page3/speaker.png) 73%, linear-gradient(115deg, rgba(244,247,255,0) 61%, rgba(48,86,211,0.08) 61%, rgba(244,247,255,0) 100%), linear-gradient(115deg, rgba(244,247,255,0) 67%, rgba(48,86,211,0.08) 67%, rgba(244,247,255,0) 100%) #F4F7FF;
     background-repeat: no-repeat;
 }
 
