@@ -1,0 +1,112 @@
+@import url(reset.css);
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    line-height: 1.2; /* 30/25 */
+}
+
+.page {
+    background-color: #c6ee95;
+}
+
+[class*=__container] {
+    max-width: 1470px;
+    margin: 0 auto;
+    padding: 15px 15px;
+}
+
+div:not(:last-child) {
+    margin-bottom: 100px;
+}
+
+.design-block div:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.icons-block-title, .design-block-title, .content-images-block-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.design-block-text1 {
+    min-height: 150px;
+    background: #000 url(../img/design/dotted-\ shape.webp) 0 0/ auto auto no-repeat;
+}
+
+.design-block-text2 {
+    min-height: 150px;
+    background: #000 url(../img/design/dotted-shape1.webp) 0 0/ auto auto no-repeat;
+}
+
+.design-block-text3 {
+    min-height: 150px;
+    background: #000 url(../img/design/dotted-shape2.webp) 0 0/ auto auto no-repeat;
+}
+
+.design-block-text4 {
+    min-height: 150px;
+    background: #fff url(../img/design/dotted-shape3.webp) 0 0/ auto auto no-repeat;
+}
+
+.design-block-text5 {
+    min-height: 150px;
+    background: #fff url(../img/design/ellipse2706.webp) 0 0/ auto auto no-repeat;
+}
+
+.design-block-text6 {
+    min-height: 150px;
+    background: #000 url(../img/design/oval1.webp) 0 0/ auto auto no-repeat;
+}
+
+.content-images-block img {
+    width: 100%;
+}
+
+.content-images-block img:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+
+.icons-block-title::before {
+    content: "1";
+    color: #fff;
+    background-color: rgb(14, 200, 92);
+    border-radius: 50%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 10px;
+    padding-top: 2px;
+}
+
+.design-block-title::before {
+    content: "2";
+    color: #fff;
+    background-color: rgb(14, 200, 92);
+    border-radius: 50%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 10px;
+    padding-top: 2px;
+}
+
+.content-images-block-title::before {
+    content: "3";
+    color: #fff;
+    background-color: rgb(14, 200, 92);
+    border-radius: 50%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 10px;
+    padding-top: 2px;
+}
