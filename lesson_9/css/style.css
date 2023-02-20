@@ -60,6 +60,51 @@ div:not(:last-child) {
     background: #000 url(../img/design/oval1.webp) 0 0/ auto auto no-repeat;
 }
 
+.design-block-text7 {
+    min-height: 150px;
+    background: #000 url(../img/design/slider-dots.webp) 0 0/ auto auto no-repeat;
+}
+
+.design-block-text8 {
+    min-height: 150px;
+    background: #000 url(../img/design/new/ellipse2717.svg) 0 0/ auto auto no-repeat;
+}
+
+.design-block-text9 {
+    min-height: 150px;
+    background: #000 url(../img/design/new/ellipse2718.svg) 0 0/ auto auto no-repeat;
+}
+
+.design-block-text10 {
+    min-height: 150px;
+    background: #000 url(../img/design/new/oval.svg) 0 0/ auto auto no-repeat;
+}
+
+.design-block-text11 {
+    min-height: 150px;
+    background: #000 url(../img/design/new/oval1.svg) 0 0/ auto auto no-repeat;
+}
+
+.design-block-text12 {
+    min-height: 150px;
+    background: #000 url(../img/design/new/rectangle4362.svg) 0 0/ auto auto no-repeat;
+}
+
+.design-block-text13 {
+    min-height: 150px;
+    background: #000 url(../img/design/new/rectangle4363.svg) 0 0/ auto auto no-repeat;
+}
+
+.design-block-text14 {
+    min-height: 150px;
+    background: #000 url(../img/design/new/vector14.svg) 0 0/ auto auto no-repeat;
+}
+
+.design-block-text15 {
+    min-height: 150px;
+    background: #000 url(../img/design/new/vector15.svg) 0 0/ auto auto no-repeat;
+}
+
 .content-images-block img {
     width: 100%;
 }
