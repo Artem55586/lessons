@@ -147,7 +147,7 @@ body {
     bottom: 11px;
 }
 
-.menu-first::before {
+.menu-first::before, .menu-first_second::before {
     content: "";
     background-image: url(../img/triangle.svg);
     background-repeat: no-repeat;
@@ -252,13 +252,17 @@ body {
     padding-bottom: 50px;
 }
 
-.header__list-main_hover:hover .menu-first {
+.header__list-main_hover:hover .menu-first_second {
+    /* position: absolute; */
     display: block;
     opacity: 1;
     visibility: visible;
     pointer-events: all;
 }
 
-/* .header__submenu.menu-first {
-    top: 96%;
-} */
+.menu-first_second {
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
