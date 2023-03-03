@@ -178,6 +178,16 @@ body {
     text-align: start;
 }
 
+.second-menu {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-first__list:hover .second-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
 .menu-first__list:hover, .menu-first__list:focus {
     text-decoration: underline;
 }
@@ -189,6 +199,11 @@ body {
 .menu-first__link_blue {
     color: #3056D3;
     margin-right: 59px;
+}
+
+.menu-first__list_square {
+    margin-right: -120px;
+    padding-right: 120px;
 }
 
 .menu-first__arrow {
