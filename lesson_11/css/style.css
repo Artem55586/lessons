@@ -147,7 +147,7 @@ body {
     bottom: 11px;
 }
 
-.menu-first::before, .menu-first_second::before {
+.menu-first::before, .menu-first_new::before {
     content: "";
     background-image: url(../img/triangle.svg);
     background-repeat: no-repeat;
@@ -252,7 +252,7 @@ body {
     padding-bottom: 50px;
 }
 
-.header__list-main_hover:hover .menu-first_second {
+.header__list-main_hover:hover .menu-first_new {
     /* position: absolute; */
     display: block;
     opacity: 1;
@@ -260,7 +260,7 @@ body {
     pointer-events: all;
 }
 
-.menu-first_second {
+.menu-first_new {
     position: absolute;
     top: 100%;
     left: 0;
