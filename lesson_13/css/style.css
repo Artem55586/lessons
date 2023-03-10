@@ -391,7 +391,7 @@ body {
   position: absolute;
   top: 40%;
   left: 22%;
-  animation: car-wheels 5s linear;
+  animation: car-wheels 5s linear, car-wheels-1 5s 10s linear;
 }
 
 .square-1__circle:hover,
