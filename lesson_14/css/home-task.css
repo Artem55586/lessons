@@ -1,0 +1,169 @@
+@import url(reset.css);
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page__blog {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.67; /* 20/12 */
+  color: #495057;
+}
+
+.blog__top-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 44px;
+}
+
+.blog__categories {
+  font-weight: 500;
+  line-height: 2.08; /* 25/12 */
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 7px;
+}
+
+.blog__columns {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
+.blog__item {
+  font-weight: 500;
+  line-height: 2.08; /* 25/12 */
+}
+
+.blog__item:hover {
+  color: #495057;
+  text-decoration: underline;
+  transition: all 0.4s ease;
+  transform: scale(1.1);
+}
+
+.blog__item_grey {
+  font-weight: 500;
+  line-height: 2.08; /* 25/12 */
+  color: rgba(73, 80, 87, 0.5);
+}
+
+.blog__section {
+  margin-bottom: 60px;
+}
+
+.blog__section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 45px;
+}
+
+.blog__card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 393px;
+  row-gap: 30px;
+}
+
+.blog__card:hover {
+  transition: all 0.4s ease;
+  transform: scale(1.05);
+}
+
+.blog__card:hover .card__title {
+  color: #ccd5ae;
+  transition: all 0.4s ease;
+}
+
+.card__block {
+  position: relative;
+}
+
+.card__img {
+  max-width: 100%;
+  background-color: #c4c4c4;
+}
+
+.card__link {
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 2.5; /* 20/8 */
+  text-align: center;
+  color: #f8f9fa;
+  background: rgba(33, 37, 41, 0.3);
+  border-radius: 3px;
+  padding: 3px 12px;
+  position: absolute;
+  top: 12%;
+  right: 7.63%;
+}
+
+.card__link:hover {
+  text-decoration: underline;
+}
+
+.card__content-block {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.6; /* 40/25 */
+  color: #212529;
+}
+
+.card__author {
+  padding-top: 15px;
+}
+
+.blog__link-block {
+  display: flex;
+  justify-content: center;
+}
+
+.blog__button {
+  font-weight: 500;
+  line-height: 2.08; /* 25/12 */
+  text-align: center;
+  color: #f8f9fa;
+  padding: 7px 50px 8px 49px;
+  background: #212529;
+  border-radius: 3px;
+}
+
+.blog__button:hover {
+  background: #f8f9fa;
+  color: #212529;
+  border: 1px #212529 solid;
+  transition: all 0.4s ease;
+  transform: scale(1.1);
+}
