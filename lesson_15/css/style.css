@@ -36,16 +36,16 @@
   line-height: 1.5;
   color: #000000;
   position: relative;
+  display: flex;
+  column-gap: 26px;
 }
 
 .achievement__title::after {
   content: "";
-  position: absolute;
-  top: 12px;
-  left: 136px;
-  width: 464px;
   height: 2px;
   background-color: #000000;
+  flex: 0 1 464px;
+  align-self: center;
 }
 
 .achievement__header {
