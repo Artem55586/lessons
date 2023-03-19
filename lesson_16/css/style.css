@@ -96,9 +96,19 @@ main {
 }
 
 .checkout__line-form {
+  display: flex;
   flex: 0 1 50%;
 }
 
 .checkout__input {
-  flex: 0 1 50%;
+  flex: 0 1 100%;
 }
+
+
+.checkout__input_select {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5; /* 24/16 */
+  color: #637381;
+}
+
