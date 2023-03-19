@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>lesson 16</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1>Homework</h1>
+        <form action="#" enctype="multipart/form-data" method="get">
+          <div>
+            <input
+              autocomplete="on"
+              placeholder="Enter something"
+              value=""
+              required
+              name="text"
+              type="text"
+            />
+          </div>
+          <div>
+            <input
+              autocomplete="on"
+              placeholder="Enter something"
+              value="12"
+              required
+              name="text"
+              type="text"
+              tabindex="2"
+            />
+          </div>
+          <div>
+            <input
+              autocomplete="on"
+              placeholder="Enter something"
+              value=""
+              required
+              name="text"
+              type="text"
+              maxlength="5"
+            />
+          </div>
+          <div>
+            <input
+              autocomplete="on"
+              placeholder="Enter something"
+              value=""
+              required
+              name="text"
+              type="text"
+              minlength="2"
+            />
+          </div>
+          <div>
+            <input
+              autocomplete="on"
+              placeholder="Enter something"
+              value=""
+              required
+              name="text"
+              type="text"
+              tabindex="1"
+            />
+          </div>
+          <div>
+            <input
+              autocomplete="on"
+              placeholder="Enter something"
+              value=""
+              required
+              name="text"
+              type="text"
+              disabled
+            />
+          </div>
+          <div>
+            <input
+              autocomplete="on"
+              placeholder="Enter something"
+              value=""
+              required
+              name="text"
+              type="text"
+              id="value-01"
+            />
+            <label for="value-01">Enter value</label>
+          </div>
+          <div>
+            <input
+              autocomplete="on"
+              placeholder="Enter something"
+              value=""
+              required
+              name="email"
+              type="email"
+              id="email-01"
+            />
+            <label for="email-01">Enter email</label>
+          </div>
+          <div>
+            <input
+              autocomplete="on"
+              placeholder="Enter tel"
+              value=""
+              required
+              name="tel"
+              type="tel"
+            />
+          </div>
+          <div>
+            <input
+              autocomplete="on"
+              placeholder="Enter password"
+              value=""
+              required
+              name="password"
+              type="password"
+            />
+          </div>
+          <div>
+            <input
+              autocomplete="on"
+              placeholder="Enter number"
+              value=""
+              required
+              name="number"
+              type="number"
+            />
+          </div>
+          <div>
+            <input
+              autocomplete="on"
+              value="#18A1B4"
+              name="color"
+              type="color"
+            />
+          </div>
+          <div>
+            <input
+              autocomplete="on"
+              placeholder="Enter search"
+              value=""
+              required
+              name="search"
+              type="search"
+            />
+          </div>
+          <div>
+            <input
+              autocomplete="on"
+              value="30"
+              name="range"
+              type="range"
+              min="0"
+              max="100"
+              step="5"
+            />
+          </div>
+          <div>
+            <input
+              autocomplete="on"
+              value=""
+              required
+              name="date"
+              type="date"
+            />
+          </div>
+          <div>
+            <input
+              autocomplete="on"
+              value=""
+              required
+              name="datetime-local"
+              type="datetime-local"
+            />
+          </div>
+          <div>
+            <input
+              value=""
+              required
+              name="laptop"
+              type="checkbox"
+              id="laptop-01"
+            />
+            <label for="laptop-01">Do you have laptop?</label>
+          </div>
+          <div>
+            <input
+              value=""
+              required
+              name="laptop"
+              type="checkbox"
+              id="comp-01"
+            />
+            <label for="comp-01">Do you have computer?</label>
+          </div>
+          <div>
+            Do you have computer or laptop?
+            <div>
+              <input
+                value="computer"
+                required
+                name="radio"
+                type="radio"
+                id="radio-01"
+              />
+              <label for="radio-01">Computer</label>
+            </div>
+            <div>
+              <input
+                value="laptop"
+                required
+                name="radio"
+                type="radio"
+                id="radio-02"
+              />
+              <label for="radio-02">Laptop</label>
+            </div>
+          </div>
+          <div>
+            <input required name="file" type="file" />
+          </div>
+          <div>
+            <input required name="file" type="file" multiple />
+          </div>
+          <div>
+            <input required name="file" type="file" multiple accept="audio/*" />
+          </div>
+          <div>
+            <input required name="file" type="file" multiple accept="video/*" />
+          </div>
+          <div>
+            <input required name="file" type="file" multiple accept="image/*" />
+          </div>
+          <div>
+            <input
+              required
+              name="file"
+              type="file"
+              multiple
+              accept="image/*,.pdf"
+            />
+          </div>
+          <div>
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+              autocomplete="off"
+            ></textarea>
+          </div>
+          <div>
+            <select name="select" id="select-1">
+              <option selected disabled value="1">Make a choice</option>
+              <option value="1">111</option>
+              <option value="2">222</option>
+              <option value="3">333</option>
+              <option value="4">444</option>
+              <option value="5">555</option>
+            </select>
+            <label for="select-1">Make a choice</label>
+          </div>
+          <div>
+            <select multiple name="select" id="select">
+              <option value="1">111</option>
+              <option value="2">222</option>
+              <option selected value="3">333</option>
+              <option value="4">444</option>
+              <option value="5">555</option>
+            </select>
+          </div>
+          <div>
+            <div>
+              <button type="button">Button</button>
+            </div>
+            <div>
+              <button type="submit">Submit</button>
+            </div>
+            <div>
+              <button type="reset">Reset</button>
+            </div>
+          </div>
+        </form>
+      </header>
+      <main class="page">
+        <div class="checkout">
+          <div class="checkout__container">
+            <h2 class="checkout__main-title">Billing Details</h2>
+            <form
+              class="checkout__form"
+              action="#"
+              method="get"
+              enctype="multipart/form-data"
+            >
+              <div class="checkout__inputs">
+                <div class="checkout__two-forms">
+                  <div class="checkout__line-form">
+                    <input
+                      class="checkout__input"
+                      placeholder="First name*"
+                      name="first-name"
+                      type="text"
+                    />
+                  </div>
+                  <div class="checkout__line-form">
+                    <input
+                      class="checkout__input"
+                      placeholder="Last name*"
+                      name="first-name"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>
