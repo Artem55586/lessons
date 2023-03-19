@@ -309,6 +309,7 @@
                       placeholder="First name*"
                       name="first-name"
                       type="text"
+                      required
                     />
                   </div>
                   <div class="checkout__line-form">
@@ -317,6 +318,7 @@
                       placeholder="Last name*"
                       name="first-name"
                       type="text"
+                      required
                     />
                   </div>
                 </div>
@@ -327,6 +329,7 @@
                       placeholder="Address*"
                       name="first-name"
                       type="text"
+                      required
                     />
                   </div>
                   <div class="checkout__line-form">
@@ -340,7 +343,12 @@
                 </div>
                 <div class="checkout__two-forms">
                   <div class="checkout__line-form checkout__line-form_select">
-                    <select class="checkout__input checkout__input_select" name="country-choice" id="country-choice">
+                    <select
+                      class="checkout__input checkout__input_select"
+                      name="country-choice"
+                      id="country-choice"
+                      required
+                    >
                       <option value="1">Country*</option>
                       <option value="1">USA</option>
                       <option value="2">Argentina</option>
@@ -353,10 +361,55 @@
                       placeholder="City/Town*"
                       name="first-name"
                       type="text"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="checkout__two-forms">
+                  <div class="checkout__line-form">
+                    <input
+                      class="checkout__input"
+                      placeholder="Postcode / ZIP*"
+                      name="first-name"
+                      type="text"
+                      required
+                    />
+                  </div>
+                  <div class="checkout__line-form">
+                    <input
+                      class="checkout__input"
+                      placeholder="Phone*"
+                      name="tel"
+                      type="tel"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="checkout__two-forms">
+                  <div class="checkout__line-form">
+                    <input
+                      class="checkout__input"
+                      placeholder="Postcode / ZIP*"
+                      name="first-name"
+                      type="text"
+                      required
+                    />
+                  </div>
+                  <div class="checkout__line-form">
+                    <input
+                      class="checkout__input"
+                      placeholder="Phone*"
+                      name="tel"
+                      type="tel"
+                      required
                     />
                   </div>
                 </div>
               </div>
+              <div class="checkout__block-area">
+                <textarea class="checkout__area-text" name="area" id="area">Additional information</textarea>
+              </div>
+              
             </form>
           </div>
         </div>
