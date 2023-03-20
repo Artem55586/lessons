@@ -455,13 +455,15 @@ footer {
 .crisp__border {
   border-top: 1px solid #c4c4c4;
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
 }
 
 .crisp__block-radio {
   display: flex;
   flex: 0 1 443px;
   padding: 11px 63px 11px 0;
-  border-bottom: 1px solid #c4c4c4;
+  /* border-bottom: 1px solid #c4c4c4; */
   justify-content: space-between;
   align-items: center;
 }
@@ -472,9 +474,10 @@ footer {
   line-height: 1.42; /* 20/14 */
   /* or 143% */
   /* align-items: center; */
-  color: #000000;
+  color: #3f3f3f;
   padding-left: 23px;
   cursor: pointer;
+  display: inline-flex;
 }
 
 .radio-block__text-middle {
@@ -519,10 +522,12 @@ footer {
   left: 0;
   top: 5px;
   /* border: 1px solid #828282; */
+  /* background-color: yellow; */
 }
 
 .radio-block__input:checked + .radio-block__box::before {
-  content: '';
+  position: absolute;
+  content: "";
   background-image: url(../img/crisp/ellipse-black.svg);
   background-repeat: no-repeat;
   flex: 0 1 10px;
@@ -530,5 +535,63 @@ footer {
   height: 10px;
   left: 0;
   top: 5px;
+  /* color: #000000; */
   /* border: 3px solid #000000; */
+  /* background-color: red; */
+}
+
+.crisp__block-radio:not(:last-child) {
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.crisp__block-radio_padding {
+  padding: 11px 61px 11px 0;
+}
+
+.radio-block__text-middle_padding {
+  padding-left: 23px;
+}
+
+.navigation__next {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5; /* 21/14 */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #000000;
+  padding: 15px 46px;
+  transition: all 0.3s;
+}
+
+.navigation__next:hover {
+  transform: scale(1.1);
+}
+
+.navigation__back {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5; /* 21/14 */
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #828282;
+  padding: 15px 0;
+  transition: all 0.3s;
+}
+
+.navigation__back:hover {
+  transform: scale(1.1);
+}
+
+.crisp__navigation {
+  display: flex;
+  justify-content: space-between;
 }
