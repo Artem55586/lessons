@@ -521,7 +521,8 @@ footer {
   /* border: 1px solid #828282; */
 }
 
-.radio-block__box:checked + .radio-block__box::before {
+.radio-block__input:checked + .radio-block__box::before {
+  content: '';
   background-image: url(../img/crisp/ellipse-black.svg);
   background-repeat: no-repeat;
   flex: 0 1 10px;
@@ -529,4 +530,5 @@ footer {
   height: 10px;
   left: 0;
   top: 5px;
+  /* border: 3px solid #000000; */
 }
