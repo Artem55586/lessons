@@ -161,6 +161,10 @@ main {
 
 .checkbox-block__input {
   appearance: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
 }
 
 .checkbox-block__label {
@@ -207,7 +211,8 @@ main {
 .coupon__box {
   display: flex;
   justify-content: space-between;
-  column-gap: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .coupon__block {
@@ -228,4 +233,284 @@ main {
   padding: 12px 22px;
   background: #212b36;
   border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.coupon__btn:hover {
+  transform: scaleX(1.05);
+  color: #212b36;
+  border: 1px #212b36 solid;
+  background: #ffffff;
+}
+
+/* crisp */
+
+footer {
+  font-family: "Oswald", "Roboto", sans-serif;
+}
+
+.footer__crisp {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25; /* 20/16 */
+  color: #3f3f3f;
+}
+
+.footer__crisp {
+  padding-top: 57px;
+  padding-bottom: 80px;
+}
+
+.crisp__container {
+  max-width: 636px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.crisp__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2.83; /* 68/24 */
+  color: #000000;
+  margin-bottom: 34px;
+}
+
+.crisp__email {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-bottom: 27px;
+}
+
+.email__input,
+.password__input,
+.code__input {
+  flex: 0 1 451px;
+  /* align-items: center; */
+  border: 1px solid #c4c4c4;
+  padding: 10px 16px;
+  /* color: #3f3f3f; */
+}
+
+.email__span {
+  color: #eb5757;
+}
+
+.crisp__password {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.crisp__code {
+  display: flex;
+  justify-content: space-between;
+}
+
+.crisp__text {
+  font-size: 14px;
+  line-height: 1.43; /* 20/14 */
+  display: flex;
+  align-items: center;
+  color: #828282;
+  padding: 4px 0;
+  margin-bottom: 14px;
+}
+
+.crisp__block-buttons {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.crisp__btn {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5; /* 21/14 */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #000000;
+  padding: 18px 43px;
+  transition: all 0.3s;
+}
+
+.crisp__btn:hover {
+  transform: scale(1.05);
+  background: #ffffff;
+  color: #000000;
+  border: 1px #000000 solid;
+}
+
+.crisp__block-button,
+.crisp__block-forgot {
+  display: inline-block;
+}
+
+.crisp__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42; /* 20/14 */
+  display: flex;
+  align-items: center;
+  color: #0f6db1;
+  padding: 18px 0;
+}
+
+.crisp__about-user {
+  padding-top: 39px;
+  /* padding-bottom: 46px; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  margin-bottom: 13px;
+  border-top: 1px solid #c4c4c4;
+}
+
+.user-about__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-about__input {
+  border: 1px solid #c4c4c4;
+  flex: 0 1 451px;
+  height: 44px;
+}
+
+.user-about__span {
+  color: #eb5757;
+}
+
+.crisp__empty-blocks {
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.empty__box {
+  display: flex;
+  width: 451px;
+}
+
+.crisp__country-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  margin-bottom: 46px;
+}
+
+.crisp__state {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.state__span {
+  color: #eb5757;
+}
+
+.state__select {
+  padding: 10px 16px;
+  border: 1px solid #c4c4c4;
+  flex: 0 1 451px;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.25; /* 20/16 */
+  display: flex;
+  align-items: center;
+  color: #3f3f3f;
+  appearance: none;
+  /* position: relative; */
+}
+
+.crisp__state::after {
+  content: "";
+  background-image: url(../img/crisp/row.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 19px;
+  right: 15px;
+  width: 11px;
+  height: 10px;
+}
+
+.crisp__title_mb40 {
+  margin-bottom: 40px;
+}
+
+.crisp__border {
+  border-top: 1px solid #c4c4c4;
+  display: flex;
+}
+
+.crisp__block-radio {
+  display: flex;
+  flex: 0 1 443px;
+  padding: 11px 63px 11px 0;
+  border-bottom: 1px solid #c4c4c4;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio-block__label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42; /* 20/14 */
+  /* or 143% */
+  /* align-items: center; */
+  color: #000000;
+}
+
+.radio-block__text-middle {
+  font-weight: 400;
+  font-size: 14px;
+  color: #3f3f3f;
+}
+
+.radio-block__text-right {
+  font-weight: 400;
+  font-size: 14px;
+  color: #3f3f3f;
+}
+
+.radio-block__box {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.radio-block__input {
+  display: flex;
+  gap: 13px;
+  appearance: none;
+  /* position: absolute; */
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.radio-block__input::before {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url(../img/crisp/ellipse-gray.svg);
+  width: 10px;
+  height: 10px;
+  left: 0;
+  top: 5px;
+  /* border: 1px solid #828282; */
 }

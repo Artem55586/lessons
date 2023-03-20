@@ -8,7 +8,15 @@
       href="https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:regular,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:regular&display=swap"
+      rel="stylesheet"
+    />
     <title>lesson 16</title>
   </head>
   <body>
@@ -464,7 +472,181 @@
           </div>
         </div>
       </main>
-      <footer></footer>
+      <footer class="footer">
+        <div class="footer__crisp crisp">
+          <div class="crisp__container">
+            <h4 class="crisp__title">Shipping Address</h4>
+            <div class="crisp__email email">
+              <label class="email__label" for="email-crisp"
+                >Email Address <span class="email__span">*</span></label
+              >
+              <input
+                class="email__input"
+                name="email"
+                id="email-crisp"
+                required
+                type="email"
+                value="roni_cost@example.com"
+              />
+            </div>
+            <div class="crisp__password password">
+              <label class="password__label" for="password-crisp"
+                >Password</label
+              >
+              <input
+                class="password__input"
+                name="password"
+                id="password-crisp"
+                required
+                type="password"
+                value="******************"
+              />
+            </div>
+            <div class="crisp__code code">
+              <label class="code__label" for="password-code"
+                >Zip/Postal Code</label
+              >
+              <input
+                class="code__input"
+                type="text"
+                name="code"
+                id="code-crisp"
+                required
+              />
+            </div>
+            <p class="crisp__text">
+              You already have an account with us. Sign in or continue as guest.
+            </p>
+            <div class="crisp__block-buttons">
+              <div class="crisp__block-button">
+                <button class="crisp__btn" type="submit">login</button>
+              </div>
+              <div class="crisp__block-forgot">
+                <a class="crisp__link" href="">Forgot Your Password?</a>
+              </div>
+            </div>
+            <div class="crisp__about-user user-about">
+              <div class="user-about__block">
+                <label class="user-about__label" for="crisp__first-name"
+                  >First Name <span class="user-about__span">*</span></label
+                >
+                <input
+                  class="user-about__input"
+                  required
+                  type="text"
+                  name="crisp__first-name"
+                  id="crisp__first-name"
+                />
+              </div>
+              <div class="user-about__block">
+                <label class="user-about__label" for="crisp__first-name"
+                  >Last Name <span class="user-about__span">*</span></label
+                >
+                <input
+                  class="user-about__input"
+                  required
+                  type="text"
+                  name="crisp__first-name"
+                  id="crisp__first-name"
+                />
+              </div>
+              <div class="user-about__block">
+                <label class="user-about__label" for="crisp__first-name"
+                  >Company</label
+                >
+                <input
+                  class="user-about__input"
+                  type="text"
+                  name="crisp__first-name"
+                  id="crisp__first-name"
+                />
+              </div>
+              <div class="user-about__block">
+                <label class="user-about__label" for="crisp__first-name"
+                  >Street Address <span class="user-about__span">*</span></label
+                >
+                <input
+                  class="user-about__input"
+                  required
+                  type="text"
+                  name="crisp__first-name"
+                  id="crisp__first-name"
+                />
+              </div>
+            </div>
+            <div class="crisp__empty-blocks empty">
+              <div class="empty__box">
+                <input
+                  class="user-about__input"
+                  type="text"
+                  name="crisp__first-name"
+                  id="crisp__first-name"
+                  required
+                />
+              </div>
+              <div class="empty__box">
+                <input
+                  class="user-about__input"
+                  type="text"
+                  name="crisp__first-name"
+                  id="crisp__first-name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="crisp__country-block">
+              <div class="user-about__block">
+                <label class="user-about__label" for="crisp__first-name"
+                  >Country <span class="user-about__span">*</span></label
+                >
+                <input
+                  class="user-about__input"
+                  required
+                  type="text"
+                  name="crisp__first-name"
+                  id="crisp__first-name"
+                />
+              </div>
+              <div class="crisp__state state">
+                <label class="state__label" for="state-province"
+                  >State/Province <span class="state__span">*</span></label
+                >
+                <select
+                  class="state__select"
+                  name="state-province"
+                  id="state-province"
+                >
+                  <option value="1">
+                    Please select a region, state or province
+                  </option>
+                  <option value="2">USA</option>
+                  <option value="3">Argentina</option>
+                  <option value="4">Canada</option>
+                </select>
+              </div>
+            </div>
+            <h4 class="crisp__title crisp__title_mb40">Shipping Methods</h4>
+            <div class="crisp__border">
+              <div class="crisp__block-radio radio-block">
+                <div class="radio-block__box">
+                  <input
+                    class="radio-block__input"
+                    type="radio"
+                    name="radio-block"
+                    id="radio-block"
+                    checked
+                  />
+                  <label class="radio-block__label" for="radio-block"
+                    >$5.00</label
+                  >
+                </div>
+                <p class="radio-block__text-middle">Fixed</p>
+                <p class="radio-block__text-right">Flat Rate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
