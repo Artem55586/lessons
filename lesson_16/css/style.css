@@ -94,6 +94,7 @@ main {
   display: flex;
   justify-content: space-between;
   column-gap: 28px;
+  /* position: relative; */
 }
 
 .checkout__line-form {
@@ -105,7 +106,6 @@ main {
   flex: 0 1 100%;
 }
 
-
 .checkout__input_select {
   font-weight: 500;
   font-size: 16px;
@@ -113,16 +113,27 @@ main {
   color: #637381;
   padding-left: 25px;
   appearance: none;
+  /* position: relative; */
+}
+
+.checkout__line-form_select {
+  display: flex;
+  flex: 0 1 50%;
   position: relative;
 }
 
-.checkout__input_select::after {
+.checkout__block-select {
+  display: flex;
+  flex: 0 1 100%;
+}
+
+.checkout__block-select::after {
   position: absolute;
   content: "";
   background-image: url(../img/checkout/row.svg);
   background-repeat: no-repeat;
-  top: 0;
-  right: 0;
+  top: 23px;
+  right: 21px;
   width: 16px;
   height: 8px;
 }
@@ -140,3 +151,81 @@ main {
   resize: vertical;
 }
 
+.checkout__block-checkbox {
+  margin-bottom: 55px;
+}
+
+.checkbox-block__box:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.checkbox-block__input {
+  appearance: none;
+}
+
+.checkbox-block__label {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.checkbox-block__label::before {
+  content: "";
+  border: 0.7px solid #e7e7e7;
+  border-radius: 4px;
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox-block__input:checked + .checkbox-block__label::before {
+  content: "";
+  background-image: url(../img/checkout/row-blue.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+}
+
+.coupon__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.3; /* 26/20 */
+  color: #212b36;
+  margin-bottom: 25px;
+}
+
+.checkout__block-coupon {
+  max-width: 480px;
+}
+
+.coupon__box {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.coupon__block {
+  display: flex;
+  flex-grow: 1;
+}
+
+.coupon__input {
+  padding: 12px 22px;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  flex: 0 1 100%;
+}
+
+.coupon__btn {
+  font-weight: 600;
+  color: #ffffff;
+  padding: 12px 22px;
+  background: #212b36;
+  border-radius: 5px;
+}

@@ -343,17 +343,19 @@
                 </div>
                 <div class="checkout__two-forms">
                   <div class="checkout__line-form checkout__line-form_select">
-                    <select
-                      class="checkout__input checkout__input_select"
-                      name="country-choice"
-                      id="country-choice"
-                      required
-                    >
-                      <option value="1">Country*</option>
-                      <option value="1">USA</option>
-                      <option value="2">Argentina</option>
-                      <option value="3">Canada</option>
-                    </select>
+                    <div class="checkout__block-select">
+                      <select
+                        class="checkout__input checkout__input_select"
+                        name="country-choice"
+                        id="country-choice"
+                        required
+                      >
+                        <option value="1">Country*</option>
+                        <option value="1">USA</option>
+                        <option value="2">Argentina</option>
+                        <option value="3">Canada</option>
+                      </select>
+                    </div>
                   </div>
                   <div class="checkout__line-form">
                     <input
@@ -407,9 +409,47 @@
                 </div>
               </div>
               <div class="checkout__block-area">
-                <textarea class="checkout__area-text" name="area" id="area">Additional information</textarea>
+                <textarea class="checkout__area-text" name="area" id="area">
+Additional information</textarea
+                >
               </div>
-              
+              <div class="checkout__block-checkbox checkbox-block">
+                <div class="checkbox-block__box">
+                  <input
+                    required
+                    class="checkbox-block__input"
+                    type="checkbox"
+                    name="create-account"
+                    id="create-account"
+                  />
+                  <label class="checkbox-block__label" for="create-account"
+                    >Create Account</label
+                  >
+                </div>
+                <div class="checkbox-block__box">
+                  <input
+                    required
+                    class="checkbox-block__input"
+                    type="checkbox"
+                    name="address"
+                    id="address"
+                  />
+                  <label class="checkbox-block__label" for="address"
+                    >Ship to a different address?</label
+                  >
+                </div>
+              </div>
+              <div class="checkout__block-coupon coupon">
+                <h3 class="coupon__title">Apply Coupon to get discount!</h3>
+                <div class="coupon__box">
+                  <div class="coupon__block">
+                    <input class="coupon__input" placeholder="Coupon code" name="coupon-code" type="text">
+                  </div>
+                  <div class="coupon__button-box">
+                    <button class="coupon__btn" type="submit">Apply Code</button>
+                  </div>
+                </div>
+              </div>
             </form>
           </div>
         </div>
