@@ -537,7 +537,7 @@ footer {
   width: 10px;
   height: 10px;
   left: 0;
-  top: 5px; */ */
+  /* top: 5px; */
   /* color: #000000; */
   border: 3px solid #000000;
   /* background-color: red; */
@@ -573,6 +573,9 @@ footer {
 
 .navigation__next:hover {
   transform: scale(1.1);
+  color: #000000;
+  background: #ffffff;
+  border: 1px #000000 solid;
 }
 
 .navigation__back {
