@@ -514,29 +514,32 @@ footer {
 .radio-block__box::before {
   position: absolute;
   content: "";
-  background-repeat: no-repeat;
-  background-image: url(../img/crisp/ellipse-gray.svg);
+  /* background-repeat: no-repeat; */
+  /* background-image: url(../img/crisp/ellipse-gray.svg); */
   flex: 0 1 10px;
   width: 10px;
   height: 10px;
   left: 0;
   top: 5px;
+  border: 1px solid #828282;
+  border-radius: 50%;
+  background: #fff;
   /* border: 1px solid #828282; */
   /* background-color: yellow; */
 }
 
 .radio-block__input:checked + .radio-block__box::before {
-  position: absolute;
+  /* position: absolute;
   content: "";
-  background-image: url(../img/crisp/ellipse-black.svg);
-  background-repeat: no-repeat;
+  /* background-image: url(../img/crisp/ellipse-black.svg); */
+  /* background-repeat: no-repeat;
   flex: 0 1 10px;
   width: 10px;
   height: 10px;
   left: 0;
-  top: 5px;
+  top: 5px; */ */
   /* color: #000000; */
-  /* border: 3px solid #000000; */
+  border: 3px solid #000000;
   /* background-color: red; */
 }
 
