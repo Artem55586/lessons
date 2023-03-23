@@ -60,6 +60,12 @@ main {
   color: #637381;
 }
 
+@media (max-width: 400px) {
+  main {
+    font-size: 14px;
+  }
+}
+
 .checkout__container {
   max-width: 730px;
   margin: 0 auto;
@@ -75,6 +81,13 @@ main {
   line-height: 1.25; /* 30/24 */
   color: #212b36;
   margin-bottom: 30px;
+}
+
+@media (max-width: 540px) {
+  .checkout__main-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
 }
 
 .checkout__inputs {
@@ -96,6 +109,13 @@ main {
   column-gap: 28px;
 }
 
+@media (max-width: 680px) {
+  .checkout__two-forms {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+
 .checkout__line-form {
   display: flex;
   flex: 0 1 50%;
@@ -112,6 +132,12 @@ main {
   color: #637381;
   padding-left: 25px;
   appearance: none;
+}
+
+@media (max-width: 400px) {
+  .checkout__input_select {
+    font-size: 14px;
+  }
 }
 
 .checkout__line-form_select {
@@ -153,6 +179,12 @@ main {
   margin-bottom: 55px;
 }
 
+@media (max-width: 478px) {
+  .checkout__block-checkbox {
+    margin-bottom: 25px;
+  }
+}
+
 .checkbox-block__box:not(:last-child) {
   margin-bottom: 25px;
 }
@@ -174,7 +206,7 @@ main {
 }
 
 .checkbox-block__input:focus-visible + .checkbox-block__label {
-  border: 1px solid #3056D3;
+  border: 1px solid #3056d3;
 }
 
 .checkbox-block__label::before {
@@ -206,6 +238,13 @@ main {
   margin-bottom: 25px;
 }
 
+@media (max-width: 478px) {
+  .coupon__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
 .checkout__block-coupon {
   max-width: 480px;
 }
@@ -215,6 +254,12 @@ main {
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
+}
+
+@media (max-width: 478px) {
+  .coupon__box {
+    flex-direction: column;
+  }
 }
 
 .coupon__block {
@@ -259,6 +304,12 @@ footer {
   color: #3f3f3f;
 }
 
+@media (max-width: 600px) {
+  .footer__crisp {
+    font-size: 14px;
+  }
+}
+
 .footer__crisp {
   padding-top: 57px;
   padding-bottom: 80px;
@@ -281,10 +332,25 @@ footer {
   margin-bottom: 34px;
 }
 
+@media (max-width: 600px) {
+  .crisp__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
 .crisp__email {
   display: flex;
   justify-content: space-between;
   margin-bottom: 27px;
+}
+
+@media (max-width: 588px) {
+  .crisp__email {
+    flex-direction: column;
+    margin-bottom: 20px;
+    row-gap: 10px;
+  }
 }
 
 .email__input,
@@ -293,6 +359,14 @@ footer {
   flex: 0 1 451px;
   border: 1px solid #c4c4c4;
   padding: 10px 16px;
+}
+
+@media (max-width: 588px) {
+  .email__input,
+  .password__input,
+  .code__input {
+    flex-basis: 40px;
+  }
 }
 
 .email__span {
@@ -305,9 +379,25 @@ footer {
   margin-bottom: 24px;
 }
 
+@media (max-width: 588px) {
+  .crisp__password {
+    flex-direction: column;
+    margin-bottom: 20px;
+    row-gap: 10px;
+  }
+}
+
 .crisp__code {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 588px) {
+  .crisp__code {
+    flex-direction: column;
+    margin-bottom: 20px;
+    row-gap: 10px;
+  }
 }
 
 .crisp__text {
@@ -343,6 +433,12 @@ footer {
   transition: all 0.3s;
 }
 
+@media (max-width: 600px) {
+  .crisp__btn {
+    padding: 10px 27px;
+  }
+}
+
 .crisp__btn:hover {
   transform: scale(1.05);
   background: #ffffff;
@@ -376,15 +472,35 @@ footer {
   border-top: 1px solid #c4c4c4;
 }
 
+@media (max-width: 588px) {
+  .crisp__about-user {
+    row-gap: 10px;
+  }
+}
+
 .user-about__block {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 588px) {
+  .user-about__block {
+    flex-direction: column;
+    /* margin-bottom: 20px; */
+    row-gap: 10px;
+  }
 }
 
 .user-about__input {
   border: 1px solid #c4c4c4;
   flex: 0 1 451px;
   height: 44px;
+}
+
+@media (max-width: 588px) {
+  .user-about__input {
+    flex-basis: 40px;
+  }
 }
 
 .user-about__span {
@@ -399,9 +515,30 @@ footer {
   margin-bottom: 24px;
 }
 
+@media (max-width: 588px) {
+  .crisp__empty-blocks {
+    row-gap: 10px;
+    align-items: normal;
+  }
+}
+
 .empty__box {
   display: flex;
   width: 451px;
+}
+
+@media (max-width: 588px) {
+  .empty__box {
+    flex-direction: column;
+    width: 100%;
+    flex: 0 1 100%;
+  }
+}
+
+@media (max-width: 588px) {
+  .empty__box .user-about__input {
+    flex-basis: 40px;
+  }
 }
 
 .crisp__country-block {
@@ -411,10 +548,23 @@ footer {
   margin-bottom: 46px;
 }
 
+@media (max-width: 588px) {
+  .crisp__country-block {
+    margin-bottom: 26px;
+  }
+}
+
 .crisp__state {
   display: flex;
   justify-content: space-between;
   position: relative;
+}
+
+@media (max-width: 588px) {
+  .crisp__state {
+    flex-direction: column;
+    row-gap: 10px;
+  }
 }
 
 .state__span {
@@ -434,6 +584,24 @@ footer {
   appearance: none;
 }
 
+@media (max-width: 600px) {
+  .state__select {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 588px) {
+  .state__select {
+    flex-basis: 40px;
+  }
+}
+
+@media (max-width: 330px) {
+  .state__select {
+    font-size: 13px;
+  }
+}
+
 .crisp__state::after {
   content: "";
   background-image: url(../img/crisp/row.svg);
@@ -445,8 +613,21 @@ footer {
   height: 10px;
 }
 
+@media (max-width: 588px) {
+  .crisp__state::after {
+    top: 43px;
+    right: 15px;
+  }
+}
+
 .crisp__title_mb40 {
   margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+  .crisp__title_mb40 {
+    margin-bottom: 20px;
+  }
 }
 
 .crisp__border {
@@ -519,7 +700,7 @@ footer {
 }
 
 .radio-block__input:focus-visible + .radio-block__label {
-  border: 1px solid #3056D3;
+  border: 1px solid #3056d3;
 }
 
 .radio-block__input:checked + label {
@@ -542,6 +723,12 @@ footer {
   padding-left: 23px;
 }
 
+@media (max-width: 467px) {
+  .crisp__block-radio {
+    padding-right: 15px;
+  }
+}
+
 .navigation__next {
   font-family: "Oswald";
   font-weight: 500;
@@ -556,6 +743,12 @@ footer {
   background: #000000;
   padding: 15px 46px;
   transition: all 0.3s;
+}
+
+@media (max-width: 600px) {
+  .navigation__next {
+    padding: 10px 27px;
+  }
 }
 
 .navigation__next:hover {
