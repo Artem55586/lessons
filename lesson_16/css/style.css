@@ -267,6 +267,12 @@ main {
   flex-grow: 1;
 }
 
+@media (max-width: 478px) {
+  .coupon__button-box {
+    margin: 0 auto;
+  }
+}
+
 .coupon__input {
   padding: 12px 22px;
   border: 1px solid #e7e7e7;
