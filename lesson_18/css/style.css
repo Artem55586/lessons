@@ -157,11 +157,22 @@ body {
 
 /* main */
 
-
+.artists__top-block {
+  position: relative;
+  text-align: center;
+  /* width: 100%;
+  height: 100%; */
+}
 
 .artists__background {
-  position: relative;
-  /* max-width: 1240px; */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* max-width: 1240px;
+  max-height: 500px; */
+  min-height: 500px;
 }
 
 .background__image {
@@ -171,6 +182,32 @@ body {
   top: 0;
   left: 0;
   object-fit: cover;
+}
+
+.artists__author {
+  text-align: center;
+}
+
+.author__name {
+  font-weight: 300;
+  line-height: 1.67%; /* 20/12 */
+  text-align: center;
+  color: #e5e5e5;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.artists__main-title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.6; /* 40/25 */
+  text-align: center;
+  color: #f8f9fa;
+  position: relative;
+  z-index: 2;
+  max-width: 535px;
+  display: inline-block;
 }
 
 @media (any-hover: hover) {
