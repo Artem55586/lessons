@@ -102,6 +102,7 @@ body {
   visibility: hidden;
   pointer-events: none;
   transition: all 0.3s;
+  z-index: 2;
 }
 
 .menu__list_parent:hover .menu__sub-menu {
@@ -155,13 +156,57 @@ body {
   transition: transform 0.3s;
 }
 
+.top__burger {
+  display: block;
+  flex: 0 0 40px;
+  height: 40px;
+  position: relative;
+  display: none;
+}
+
+.top__burger span {
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin-bottom: 7px;
+  position: relative;
+  background: #495057;
+}
+
+.top__burger.active span:nth-child(2) {
+  opacity: 0;
+}
+.top__burger.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+}
+.top__burger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: -10px;
+}
+
+/* .menu {
+  display: none;
+} */
+.navigation__menu.active {
+  display: block;
+}
+
 /* main */
 
 .artists__top-block {
   position: relative;
   text-align: center;
+  /* padding-top: 192px; */
   /* width: 100%;
   height: 100%; */
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+  padding: 20px 0;
 }
 
 .artists__background {
@@ -172,7 +217,7 @@ body {
   left: 0;
   /* max-width: 1240px;
   max-height: 500px; */
-  min-height: 500px;
+  /* min-height: 500px; */
 }
 
 .background__image {
@@ -195,7 +240,7 @@ body {
   color: #e5e5e5;
   margin-bottom: 15px;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .artists__main-title {
@@ -205,7 +250,7 @@ body {
   text-align: center;
   color: #f8f9fa;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   max-width: 535px;
   display: inline-block;
 }
@@ -226,4 +271,30 @@ body {
   .get-started__block:hover .get-started__link {
     transform: scale(1.05);
   }
+}
+
+@media (max-width: 767.98px) {
+  .header__top {
+    flex-direction: column;
+  }
+
+  .top__burger {
+    display: block;
+  }
+
+  .navigation__menu {
+    display: none;
+  }
+
+  /* .navigation__menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    overflow: auto;
+    background-color: #212529;
+    padding: 70px 15px 20px 15px;
+    transition: left 0.3s;
+  } */
 }

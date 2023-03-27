@@ -60,6 +60,11 @@
               <a class="get-started__link" href="#">Get Started</a>
             </div>
           </div>
+          <button class="top__burger" type="button" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </header>
@@ -82,6 +87,14 @@
     <footer class="footer">
     </footer>
   </div>
+<script>
+  function toggleMenu() {
+    var menu = document.querySelector('.navigation__menu');
+    var burger = document.querySelector('.top__burger');
+    burger.classList.toggle('active');
+    menu.classList.toggle('active');
+  }
+</script>
 </body>
 
 </html>
