@@ -532,6 +532,9 @@ body {
 }
 
 @media (any-hover: hover) {
+  .logo__link:hover {
+    text-decoration: underline;
+  }
   .menu__link:hover {
     color: #495057;
   }
