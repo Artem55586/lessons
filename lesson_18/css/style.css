@@ -151,7 +151,7 @@ body {
   position: relative;
 }
 
-.get-started__block {
+.right-block__get-started-block {
   display: flex;
   align-items: center;
 }
@@ -544,7 +544,7 @@ body {
   .right-block__link:hover {
     text-decoration: underline;
   }
-  .get-started__block:hover .get-started__link {
+  .right-block__get-started-block:hover .get-started__link {
     transform: scale(1.05);
   }
   .bottom-block__link:hover::after {
