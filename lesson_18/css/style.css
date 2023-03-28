@@ -203,6 +203,10 @@ body {
 
 /* main */
 
+.page__artists {
+  padding-top: 100px;
+}
+
 .artists__top-block {
   position: relative;
   text-align: center;
