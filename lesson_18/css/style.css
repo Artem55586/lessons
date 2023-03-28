@@ -595,7 +595,8 @@ body {
   }
 
   .navigation__menu {
-    display: none;
+    display: flex;
+    flex-direction: column;
   }
 
   .navigation__block {

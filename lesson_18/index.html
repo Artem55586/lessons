@@ -247,12 +247,24 @@
     </footer>
   </div>
   <script>
-    function toggleMenu() {
-      var menu = document.querySelector('.navigation__menu');
-      var burger = document.querySelector('.top__burger');
-      burger.classList.toggle('active');
-      menu.classList.toggle('active');
-    }
+    // function toggleMenu() {
+    //   var menu = document.querySelector('.navigation__menu');
+    //   var burger = document.querySelector('.top__burger');
+    //   burger.classList.toggle('active');
+    //   menu.classList.toggle('active');
+    // }
+
+    document.addEventListener("click", function (e) {
+      const targetElement = e.target
+
+      if (targetElement.closest(".top__burger")) {
+        document.documentElement.classList.toggle("menu-open")
+        e.preventDefault()
+      }
+    })
+
+
   </script>
 </body>
+
 </html>
