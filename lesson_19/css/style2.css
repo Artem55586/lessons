@@ -44,7 +44,7 @@ body {
 
 .top-block__card {
   position: relative;
-  padding: 40.350877%; /* 230/570 */
+  padding-bottom: 40.350877%; /* 230/570 */
 }
 
 .top-block__card:nth-child(1) {
@@ -54,14 +54,14 @@ body {
 .card__nav {
   position: absolute;
   z-index: 1;
-  top: 0;
-  left: 0;
+  top: 40px;
+  left: 40px;
   display: flex;
   flex-direction: column;
   row-gap: 12px;
-  flex: 0 1 412px;
-  max-width: 412px;
-  padding: 40px 10px 0 40px;
+  flex: 0 1 362px;
+  max-width: 362px;
+  /* padding: 40px 10px 0 40px; */
 }
 .card__link {
 }
@@ -86,5 +86,95 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  /* object-fit: cover; */
+  object-fit: cover;
+}
+
+.examples__middle-block {
+  padding: 120px 0;
+  background-color: #fafafa;
+}
+
+.middle-block__latest-products {
+  /* padding: 120px 0; */
+  /* background-color: #fafafa; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.latest-products__top-block {
+  text-align: center;
+  /* display: grid; */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 0 1 495px;
+  /* grid-template-rows: repeat(2, 1fr); */
+  /* max-width: 490px; */
+  margin-bottom: 70px;
+}
+
+.latest-products__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.12; /* 45/40 */
+  text-align: center;
+  text-transform: capitalize;
+  color: #212b36;
+}
+
+.middle-block__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 30px;
+}
+
+.grid__card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  background-color: #fff;
+}
+
+.grid__image {
+  max-width: 100%;
+  border-radius: 7px 7px 0px 0px;
+}
+
+.grid__about {
+  /* background-color: #fff; */
+}
+
+.grid__title {
+  font-size: 20px;
+  line-height: 1.3; /* 26/20 */
+  color: #212b36;
+  padding-bottom: 15px;
+}
+
+.grid__bottom-block {
+  display: flex;
+  column-gap: 48px;
+}
+
+.bottom-block__left {
+  display: flex;
+  column-gap: 7px;
+  padding: 15px 0 15px 25px;
+}
+
+.bottom-block__image {
+  max-width: 100%;
+}
+
+.bottom-block__number {
+  font-weight: 500;
+}
+
+.bottom-block__price {
+  padding: 15px 20px;
+}
+
+.bottom-block__link-price {
+  color: #212b36;
 }
