@@ -409,7 +409,7 @@ body {
   }
   .trending__grid {
     grid-template-columns: repeat(auto-fit, minmax(0px, 390px));
-    grid-template-rows: repeat(auto-fit, minmax(0px, 447px));
+    grid-template-rows: repeat(auto-fit, minmax(0px, auto));
   }
 }
 
@@ -446,7 +446,7 @@ body {
   .card__link:hover {
     text-decoration: underline;
   }
-  .cart-trending__block-image:hover {
+  .cart-trending__block-image img:hover {
     transform: scale(1.05);
   }
   .block-stars__rew:hover {
