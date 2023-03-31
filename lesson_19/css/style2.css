@@ -44,7 +44,7 @@ body {
 
 .top-block__card {
   position: relative;
-  padding: 85.964912%;
+  padding: 40.350877%; /* 230/570 */
 }
 
 .top-block__card:nth-child(1) {
@@ -71,6 +71,11 @@ body {
   color: #212b36;
 }
 .card__background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .background__link {
@@ -81,5 +86,5 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
