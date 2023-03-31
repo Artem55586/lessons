@@ -332,6 +332,12 @@ body {
   .page__middle-block {
     padding: 50px;
   }
+  .page__trending {
+    padding: 50px 0;
+  }
+  .latest-products__top-block{
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 840px) {
@@ -351,6 +357,9 @@ body {
   }
   .middle-block__grid {
     margin-bottom: 20px;
+  }
+  .trending__cart{
+    padding: 15px 15px 20px 15px;
   }
 }
 
@@ -395,6 +404,13 @@ body {
   .bottom-block__price {
     padding: 22px 15px;
   }
+  .cart-trending__name {
+    font-size: 18px;
+  }
+  .trending__grid {
+    grid-template-columns: repeat(auto-fit, minmax(0px, 390px));
+    grid-template-rows: repeat(auto-fit, minmax(0px, 447px));
+  }
 }
 
 @media (max-width: 370px) {
@@ -408,6 +424,9 @@ body {
     top: 10px;
     left: 10px;
     row-gap: 7px;
+  }
+  .trending__cart{
+    padding: 10px 10px 5px 10px;
   }
 }
 
