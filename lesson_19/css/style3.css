@@ -385,6 +385,10 @@ body {
   justify-content: center;
 }
 
+.columns-collections__old-price {
+  text-decoration: line-through;
+}
+
 .columns-collections__btn {
   font-size: 14px;
   line-height: 1.42; /* 20/14 */
@@ -400,6 +404,12 @@ body {
   color: #ffffff;
   background-color: #212b36;
   transform: scale(1.05);
+}
+
+@media (max-width: 1200px) {
+  .collections__columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -433,6 +443,9 @@ body {
   .category__columns {
     gap: 15px;
   }
+  .collections__columns {
+    gap: 15px;
+  }
 }
 
 @media (max-width: 950px) {
@@ -441,6 +454,15 @@ body {
   }
   .main-block__body {
     padding: 20px;
+  }
+}
+
+@media (max-width: 872px) {
+  .collections__columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .collections__top-block {
+    margin-bottom: 40px;
   }
 }
 
@@ -478,6 +500,9 @@ body {
   .category__columns {
     grid-template-columns: repeat(2, 1fr);
   }
+  .collections__top-block {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 690px) {
@@ -486,6 +511,15 @@ body {
   }
   .item-category__furniture {
     font-size: 20px;
+  }
+  .columns-collections__t-shirt {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 590px) {
+  .collections__columns {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
