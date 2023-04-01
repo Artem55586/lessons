@@ -149,7 +149,7 @@ body {
 .grid__image {
   max-width: 100%;
   border-radius: 7px 7px 0px 0px;
-  transform: all 0.3s;
+  transition: all 0.3s;
 }
 
 .grid__about {
