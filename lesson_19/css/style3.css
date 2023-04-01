@@ -345,11 +345,12 @@ body {
   align-items: center;
 }
 
-/* .columns-collections__block-image {
+.columns-collections__block-image {
   position: relative;
   overflow: hidden;
   padding-bottom: 92.592593%;
   transition: all 0.3s;
+  width: 100%;
 }
 
 .columns-collections__image {
@@ -360,7 +361,7 @@ body {
   left: 0;
   max-width: 100%;
   border-radius: 5px;
-} */
+}
 
 .columns-collections__t-shirt {
   font-size: 20px;
@@ -514,6 +515,9 @@ body {
   }
   .columns-collections__t-shirt {
     font-size: 18px;
+  }
+  .top-block-category__link-block {
+    margin: 0px auto;
   }
 }
 
