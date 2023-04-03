@@ -123,6 +123,10 @@ body {
   max-width: 100%;
 }
 
+.page__look {
+  margin-bottom: 30px;
+}
+
 .look__column {
   display: grid;
   -webkit-column-gap: 29px;
@@ -135,17 +139,29 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #f3f0ef;
 }
 
+.box-look__left-block {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 96.875%; /* 434/448 */
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 100%;
+}
 .box-look__image {
   max-width: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .box-look__right-block {
   padding-top: 82px;
   padding-right: 163px;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(241, 239, 240, 0)), color-stop(10.79%, #F1F0F0), color-stop(98.67%, #F3F0EF));
-  background: -o-linear-gradient(right, rgba(241, 239, 240, 0) 0%, #F1F0F0 10.79%, #F3F0EF 98.67%);
-  background: linear-gradient(270deg, rgba(241, 239, 240, 0) 0%, #F1F0F0 10.79%, #F3F0EF 98.67%);
 }
 .box-look__title {
   font-weight: 600;
@@ -178,6 +194,193 @@ body {
   text-transform: uppercase;
   border: 2px solid #000000;
   padding: 18px 45px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.page__shop {
+  margin-bottom: 24px;
+}
+
+.shop__column {
+  display: grid;
+  grid-template-columns: 394px 1fr;
+  gap: 30px;
+}
+
+.shop__left-block {
+  padding-top: 18px;
+  border-right: 1px solid #c4c4c4;
+}
+
+.block-left-shop__title {
+  font-size: 24px;
+  line-height: 2.83; /* 68/24 */
+}
+.block-left-shop__checkbox-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkbox-block__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.checkbox-block__label {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 4.85; /* 68/14 */
+  text-transform: uppercase;
+  color: #3f3f3f;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 9px;
+}
+.checkbox-block__label::before {
+  content: "";
+  background: #ffffff;
+  border: 1px solid #828282;
+  width: 10px;
+  height: 10px;
+}
+
+.right-block-shop__items {
+  display: grid;
+  -webkit-column-gap: 26px;
+     -moz-column-gap: 26px;
+          column-gap: 26px;
+  row-gap: 48px;
+  grid-template-columns: repeat(auto-fit, minmax(344px, 1fr));
+  margin-bottom: 63px;
+}
+
+.right-block-shop__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.right-block-shop__block-image {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 130.813953%; /* 450/344 */
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.right-block-shop__img {
+  max-width: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.right-block-shop__category {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5; /* 18/12 */
+  text-transform: uppercase;
+  color: #bdbdbd;
+  margin-bottom: 2px;
+}
+.right-block-shop__about {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5; /* 27/18 */
+  margin-bottom: 18px;
+}
+.right-block-shop__price {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5%; /* 33/22 */
+  text-transform: uppercase;
+}
+.right-block-shop__price.color {
+  color: #eb5757;
+  position: relative;
+}
+.right-block-shop__price.color::after {
+  content: "119,00 EUR";
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 1.5; /* 21/14 */
+  text-transform: uppercase;
+  color: #828282;
+  text-decoration: line-through;
+  bottom: 9px;
+  left: 106px;
+  position: absolute;
+}
+
+.checkbox-block__input:checked + .checkbox-block__label::before {
+  content: "";
+  background-image: url(../img/shop/row-cheked.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10px;
+          flex: 0 0 10px;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: 0;
+}
+
+.right-block-shop__block-button {
+  margin-bottom: 39px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.right-block-shop__btn {
+  border: 2px solid #c4c4c4;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5; /* 21/14 */
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #828282;
+  padding: 8px 36px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 @media (any-hover: hover) {
@@ -185,6 +388,21 @@ body {
     background-color: #f0f2f2;
   }
   .look__box:hover {
-    background: url(../img/look/01.webp) left no-repeat, rgba(0, 0, 0, 0.08);
+    background: rgba(0, 0, 0, 0.08);
+  }
+  .box-look__link:hover {
+    -webkit-transform: scaleX(1.05);
+        -ms-transform: scaleX(1.05);
+            transform: scaleX(1.05);
+  }
+  .right-block-shop__block-image:hover .right-block-shop__img {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .right-block-shop__btn:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }
