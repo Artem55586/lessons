@@ -135,35 +135,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  background: url(../img/look/01.webp) left no-repeat, -webkit-gradient(linear, right top, left top, from(rgba(241, 239, 240, 0)), color-stop(10.79%, #F1F0F0), color-stop(98.67%, #F3F0EF));
-  background: url(../img/look/01.webp) left no-repeat, -o-linear-gradient(right, rgba(241, 239, 240, 0) 0%, #F1F0F0 10.79%, #F3F0EF 98.67%);
-  background: url(../img/look/01.webp) left no-repeat, linear-gradient(270deg, rgba(241, 239, 240, 0) 0%, #F1F0F0 10.79%, #F3F0EF 98.67%);
 }
 
-.box-look__left-block {
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 96.875%; /* 434/448 */
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  width: 100%;
-}
 .box-look__image {
   max-width: 100%;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .box-look__right-block {
-  padding: 82px 64px 83px;
+  padding-top: 82px;
+  padding-right: 163px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(241, 239, 240, 0)), color-stop(10.79%, #F1F0F0), color-stop(98.67%, #F3F0EF));
+  background: -o-linear-gradient(right, rgba(241, 239, 240, 0) 0%, #F1F0F0 10.79%, #F3F0EF 98.67%);
+  background: linear-gradient(270deg, rgba(241, 239, 240, 0) 0%, #F1F0F0 10.79%, #F3F0EF 98.67%);
 }
 .box-look__title {
   font-weight: 600;
