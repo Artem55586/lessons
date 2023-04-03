@@ -1,0 +1,46 @@
+@use "sass:math";
+
+@import "_reset.scss";
+@import "_common.scss";
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+}
+
+.header {
+  text-align: center;
+  padding: 120px 50px;
+  // .header__title
+  &__title {
+    font-size: 70px;
+    color: brown;
+    margin-bottom: 50px;
+  }
+  // .header__list
+  &__list {
+  }
+  // .header__item
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  // .header__link
+  &__link {
+    font-size: 40px;
+    color: darkgreen;
+  }
+}

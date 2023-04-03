@@ -1,0 +1,92 @@
+@use "sass:math";
+
+@import "_reset.scss";
+@import "_common.scss";
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+}
+
+/* я потраплю в CSS */
+// я не потраплю в CSS
+
+$itemColor: red;
+$bc: yellow;
+.page {
+  padding: 120px 50px;
+  margin: 0 auto;
+  // .page__block
+  &__block {
+    background-color: $bc;
+    padding: 50px 90px;
+    &:hover {
+      .list__item {
+        color: blue;
+        margin-bottom: 35px;
+      }
+    }
+  }
+  // .page__list
+  &__list {
+  }
+}
+.list {
+  // .list__item
+  &__item {
+    font-size: 25px;
+    color: $itemColor;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+    &:nth-child(1) {
+      color: aqua;
+      @media (max-width: 767.98px) {
+        font-size: 30px;
+      }
+      @media (any-hover: hover) {
+        &:hover {
+          color: black;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        font-size: 20px;
+      }
+    }
+    &:nth-child(2) {
+      color: rgb(20, 220, 167);
+    }
+    &.color {
+      color: chartreuse;
+    }
+    &:nth-child(3) {
+      @extend .page__block;
+    }
+    &:nth-child(4) {
+      @extend %any;
+      &:hover {
+        color: black;
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+%any {
+  color: darkorange;
+  font-size: 40px;
+}
