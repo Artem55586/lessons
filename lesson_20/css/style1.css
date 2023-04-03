@@ -85,6 +85,7 @@ body {
 
 .brand__box {
   padding-top: 19px;
+  margin-bottom: 30px;
 }
 .brand__fieldset {
   border: 2px solid #c4c4c4;
@@ -103,13 +104,99 @@ body {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  gap: 35px;
+  -webkit-column-gap: 35px;
+     -moz-column-gap: 35px;
+          column-gap: 35px;
+  row-gap: 15px;
   padding: 6px 10px 29px 9px;
-  grid-template-rows: minmax(141px, 1fr);
 }
 .brand__link {
   display: inline-block;
+  padding: 52px;
+}
+@media (max-width: 558px) {
+  .brand__link {
+    padding: 22px;
+  }
 }
 .brand__image {
   max-width: 100%;
+}
+
+.look__column {
+  display: grid;
+  -webkit-column-gap: 29px;
+     -moz-column-gap: 29px;
+          column-gap: 29px;
+  row-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.look__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box-look__left-block {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 96.875%; /* 434/448 */
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 100%;
+}
+.box-look__image {
+  max-width: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.box-look__right-block {
+  padding-left: 43px;
+  padding-top: 82px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(241, 239, 240, 0)), color-stop(10.79%, #F1F0F0), color-stop(98.67%, #F3F0EF));
+  background: -o-linear-gradient(right, rgba(241, 239, 240, 0) 0%, #F1F0F0 10.79%, #F3F0EF 98.67%);
+  background: linear-gradient(270deg, rgba(241, 239, 240, 0) 0%, #F1F0F0 10.79%, #F3F0EF 98.67%);
+}
+.box-look__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.29; /* 62/48 */
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+.box-look__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.68; /* 37/22 */
+  letter-spacing: 0.01em;
+  margin-bottom: 51px;
+}
+.box-look__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5; /* 27/18 */
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: 2px solid #000000;
+  padding: 18px 45px;
+}
+
+@media (any-hover: hover) {
+  .brand__link:hover {
+    background-color: #f0f2f2;
+  }
 }
