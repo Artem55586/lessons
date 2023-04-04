@@ -95,6 +95,10 @@ body {
   }
 }
 
+.brand__link:active, .brand__link.active {
+  background-color: #f0f2f2;
+}
+
 .page {
   // .page__look
   &__look {
@@ -680,6 +684,7 @@ body {
     max-width: 100%;
     width: 40px;
     height: 40px;
+    transition: all 0.3s;
   }
 }
 
@@ -912,6 +917,7 @@ body {
     flex-direction: column;
     background-color: #ffffff;
     padding: 0 17px 0 24px;
+    transition: all 0.3s;
   }
 }
 .article {
@@ -1000,5 +1006,11 @@ body {
   .article__about:hover,
   .article__date:hover {
     text-decoration: underline;
+  }
+  .items-featured__image:hover {
+    transform: scale(1.05);
+  }
+  .blog__article:hover {
+    transform: scale(1.05);
   }
 }
