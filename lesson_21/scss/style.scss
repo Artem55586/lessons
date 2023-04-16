@@ -759,6 +759,92 @@ body {
   }
 }
 
+.footer {
+  // .footer__studio
+  &__studio {
+    background: #212529;
+    padding: rem(40) 0;
+  }
+}
+.studio {
+  // .studio__container
+  &__container {
+  }
+  // .studio__rows
+  &__rows {
+    display: flex;
+    flex-direction: column;
+  }
+  // .studio__top
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: rem(32);
+    gap: rem(25);
+    flex-wrap: wrap;
+  }
+  // .studio__bottom
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: rem(40);
+    border-top: 1px solid rgba(229, 229, 229, 0.2);
+    flex-wrap: wrap;
+    gap: rem(34);
+  }
+}
+.top-studio {
+  // .top-studio__logo
+  &__logo {
+  }
+  // .top-studio__studio
+  &__studio {
+    font-weight: 700;
+    font-size: rem(18);
+    line-height: 1.38; /* 25/18 */
+    color: #f8f9fa;
+    transition: all 0.3s;
+    display: inline-block;
+  }
+  // .top-studio__span
+  &__span {
+    color: #ddbea9;
+  }
+  // .top-studio__navigation
+  &__navigation {
+  }
+  // .top-studio__items
+  &__items {
+    display: flex;
+    gap: rem(25);
+  }
+  // .top-studio__item
+  &__item {
+  }
+  // .top-studio__link
+  &__link {
+    font-weight: 500;
+    line-height: 2.08; /* 25/12 */
+    color: rgba(248, 249, 250, 0.5);
+    transition: all 0.3s;
+    display: inline-block;
+  }
+}
+.bottom-studio {
+  // .bottom-studio__address
+  &__address {
+    font-weight: 500;
+    line-height: 1.66; /* 20/12 */
+    color: rgba(248, 249, 250, 0.5);
+  }
+  // .bottom-studio__copy
+  &__copy {
+    font-weight: 500;
+    line-height: 1.66; /* 20/12 */
+    color: rgba(248, 249, 250, 0.5);
+  }
+}
+
 @media (max-width: em(1100)) {
   .topics__left-box {
     padding: rem(30) rem(10) rem(30) rem(30);
@@ -774,7 +860,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: rem(15);
   }
-  .topics__left-box{
+  .topics__left-box {
     align-items: center;
   }
 }
@@ -852,12 +938,19 @@ body {
   }
 }
 
-@media (max-width: em(611)){
+@media (max-width: em(611)) {
   .cart-block__item {
     grid-template-columns: 1fr;
   }
-  .topics__left-box{
+  .topics__left-box {
     padding: rem(30) rem(15);
+  }
+}
+
+@media (max-width: em(423)) {
+  .studio__top,
+  .studio__bottom {
+    justify-content: center;
   }
 }
 
@@ -943,5 +1036,12 @@ body {
   }
   .item-world__about:hover {
     color: #ccd5ae;
+  }
+  .top-studio__studio:hover {
+    transform: scale(1.05);
+  }
+  .top-studio__link:hover {
+    transform: scale(1.05);
+    color: #f8f9fa;
   }
 }

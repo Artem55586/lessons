@@ -748,6 +748,86 @@ body {
           flex-grow: 1;
 }
 
+.footer__studio {
+  background: #212529;
+  padding: 2.5rem 0;
+}
+
+.studio__rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.studio__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 2rem;
+  gap: 1.5625rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.studio__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(229, 229, 229, 0.2);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2.125rem;
+}
+
+.top-studio__studio {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.38; /* 25/18 */
+  color: #f8f9fa;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+}
+.top-studio__span {
+  color: #ddbea9;
+}
+.top-studio__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5625rem;
+}
+.top-studio__link {
+  font-weight: 500;
+  line-height: 2.08; /* 25/12 */
+  color: rgba(248, 249, 250, 0.5);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.bottom-studio__address {
+  font-weight: 500;
+  line-height: 1.66; /* 20/12 */
+  color: rgba(248, 249, 250, 0.5);
+}
+.bottom-studio__copy {
+  font-weight: 500;
+  line-height: 1.66; /* 20/12 */
+  color: rgba(248, 249, 250, 0.5);
+}
+
 @media (max-width: 68.75em) {
   .topics__left-box {
     padding: 1.875rem 0.625rem 1.875rem 1.875rem;
@@ -856,6 +936,14 @@ body {
     padding: 1.875rem 0.9375rem;
   }
 }
+@media (max-width: 26.4375em) {
+  .studio__top,
+  .studio__bottom {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 @media (any-hover: hover) {
   .right-box-header__link:hover {
     color: #f8f9fa;
@@ -958,5 +1046,16 @@ body {
   }
   .item-world__about:hover {
     color: #ccd5ae;
+  }
+  .top-studio__studio:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .top-studio__link:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+    color: #f8f9fa;
   }
 }
