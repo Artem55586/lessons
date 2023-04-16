@@ -110,7 +110,7 @@ body {
 .header__logo {
   font-weight: 700;
   font-size: 1.125rem;
-  line-height: 1.3888888889em;
+  line-height: 1.38; /* 25/18 */
   color: #f8f9fa;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -177,7 +177,7 @@ body {
 }
 .right-box-header__link {
   font-weight: 500;
-  line-height: 2.0833333333em;
+  line-height: 2.08; /* 25/12 */
   color: rgba(248, 249, 250, 0.5);
   position: relative;
   -webkit-transition: color 0.3s;
@@ -322,7 +322,7 @@ body {
 }
 .top-block__date {
   font-weight: 300;
-  line-height: 1.6666666667em;
+  line-height: 1.66; /* 20/12 */
   color: #e5e5e5;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -334,7 +334,7 @@ body {
 .top-block__about {
   font-weight: 700;
   font-size: 1.5625rem;
-  line-height: 1.6em;
+  line-height: 1.6; /* 40/25 */
   color: #f8f9fa;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -342,7 +342,7 @@ body {
 }
 .top-block__text {
   font-weight: 300;
-  line-height: 1.6666666667em;
+  line-height: 1.66; /* 20/12 */
   color: #e5e5e5;
   max-width: 21.5625rem;
 }
@@ -390,12 +390,12 @@ body {
 }
 .top-block-categories__category {
   font-weight: 500;
-  line-height: 2.0833333333em;
+  line-height: 2.08; /* 25/12 */
   color: #495057;
 }
 .top-block-categories__plus {
   font-weight: 500;
-  line-height: 2.0833333333em;
+  line-height: 2.08; /* 25/12 */
   color: #495057;
 }
 .top-block-categories__right {
@@ -406,7 +406,7 @@ body {
 }
 .top-block-categories__link {
   font-weight: 500;
-  line-height: 2.0833333333em;
+  line-height: 2.08; /* 25/12 */
   color: rgba(73, 80, 87, 0.5);
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -457,7 +457,7 @@ body {
 .cart-categories__creative {
   font-weight: 700;
   font-size: 0.5rem;
-  line-height: 2.5em;
+  line-height: 2.5; /* 20/8 */
   text-align: center;
   color: #f8f9fa;
   background: rgba(33, 37, 41, 0.3);
@@ -476,26 +476,26 @@ body {
   grid-template-rows: auto auto 1fr auto;
 }
 .cart-categories__date {
-  line-height: 1.6666666667em;
+  line-height: 1.66; /* 20/12 */
 }
 .cart-categories__about {
   font-weight: 700;
   font-size: 1.5625rem;
-  line-height: 1.6em;
+  line-height: 1.6; /* 40/25 */
   color: #212529;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .cart-categories__description {
-  line-height: 1.6666666667em;
+  line-height: 1.66; /* 20/12 */
 }
 .cart-categories__box-author {
   padding-top: 1.25em;
   border-top: 1px solid #e5e5e5;
 }
 .cart-categories__author {
-  line-height: 1.6666666667em;
+  line-height: 1.66; /* 20/12 */
 }
 
 .examples-categories__button-box {
