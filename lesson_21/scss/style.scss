@@ -85,8 +85,8 @@ body {
     &::before {
       content: "";
       background-color: rgba(229, 229, 229, 0.5);
-      width: 1px;
-      height: 25px;
+      width: rem(1);
+      height: rem(25);
       display: block;
       top: -40%;
       left: -200%;
@@ -96,8 +96,8 @@ body {
   // .header__image
   &__image {
     max-width: 100%;
-    width: 12px;
-    height: 12px;
+    width: rem(12);
+    height: rem(12);
   }
 }
 .right-box-header {
@@ -138,9 +138,9 @@ body {
       content: "";
       position: absolute;
       width: 0;
-      height: 2px;
+      height: rem(2);
       background-color: #ddbea9;
-      border-radius: 2px;
+      border-radius: rem(2);
       bottom: 0;
       transition: width 0.3s;
     }
@@ -163,10 +163,10 @@ body {
 .right-box-header__item_parent::after {
   content: "";
   background: url(../img/header/row-down.svg);
-  width: 8px;
-  height: 5px;
+  width: rem(8);
+  height: rem(5);
   right: 0;
-  top: 11px;
+  top: rem(11);
   position: absolute;
 }
 
@@ -199,10 +199,10 @@ body {
   &__list {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: rem(10);
     background: #212529;
-    border-radius: 5px;
-    padding: em(20);
+    border-radius: rem(5);
+    padding: rem(20);
     min-width: rem(136);
   }
   // .sub-menu__item
@@ -218,16 +218,17 @@ body {
 
 .header__burger {
   display: block;
-  flex: 0 0 40px;
-  height: 40px;
+  flex: 0 0 rem(40);
+  height: rem(40);
   position: relative;
   display: none;
+  top: rem(4);
 }
 
 .header__burger span {
   display: block;
-  width: 40px;
-  height: 3px;
+  width: rem(40);
+  height: rem(3);
   margin-bottom: em(7, 12);
   position: relative;
   background: #495057;
@@ -238,11 +239,11 @@ body {
 }
 .right-box-header__nav-open .header__burger span:nth-child(1) {
   transform: rotate(45deg);
-  top: 10px;
+  top: rem(10);
 }
 .right-box-header__nav-open .header__burger span:nth-child(3) {
   transform: rotate(-45deg);
-  top: -10px;
+  top: rem(-10);
 }
 
 .right-box-header__nav.active {
@@ -387,7 +388,7 @@ body {
   // .examples-categories__columns
   &__columns {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(rem(290), 1fr));
     column-gap: rem(30);
     row-gap: rem(45);
     margin-bottom: rem(60);
@@ -432,8 +433,8 @@ body {
     text-align: center;
     color: #f8f9fa;
     background: rgba(33, 37, 41, 0.3);
-    border-radius: 3px;
-    padding: em(3, 12) em(12, 12);
+    border-radius: rem(3);
+    padding: rem(3, 12) rem(12, 12);
     position: absolute;
     top: 12%;
     right: 7.63%;
@@ -473,8 +474,8 @@ body {
   }
   // .cart-categories__box-author
   &__box-author {
-    padding-top: em(15, 12);
-    border-top: 1px solid #e5e5e5;
+    padding-top: rem(15);
+    border-top: rem(1) solid #e5e5e5;
   }
   // .cart-categories__author
   &__author {
@@ -496,7 +497,7 @@ body {
     color: #f8f9fa;
     padding: em(7, 12) em(50, 12) em(8, 12) em(49, 12);
     background: #212529;
-    border-radius: 3px;
+    border-radius: rem(3);
     transition: all 0.3s ease;
   }
 }
@@ -719,7 +720,7 @@ body {
     text-align: center;
     color: #f8f9fa;
     background: rgba(33, 37, 41, 0.3);
-    border-radius: 3px;
+    border-radius: rem(3);
     padding: rem(3) rem(12) rem(2) rem(13);
     position: absolute;
     top: 12%;
@@ -788,7 +789,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: rem(40);
-    border-top: 1px solid rgba(229, 229, 229, 0.2);
+    border-top: rem(1) solid rgba(229, 229, 229, 0.2);
     flex-wrap: wrap;
     gap: rem(34);
   }
@@ -862,6 +863,12 @@ body {
   }
   .topics__left-box {
     align-items: center;
+  }
+  .topics__right-block {
+    padding: rem(200) rem(20);
+  }
+  .top-block-categories__right {
+    display: none;
   }
 }
 
@@ -962,9 +969,9 @@ body {
     content: "";
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: rem(2);
     background-color: #ddbea9;
-    border-radius: 2px;
+    border-radius: rem(2);
     bottom: 0;
     transition: width 0.3s;
   }
@@ -1010,7 +1017,7 @@ body {
   .examples-categories__btn:hover {
     background: #f8f9fa;
     color: #212529;
-    border: 1px #212529 solid;
+    border: rem(1) #212529 solid;
     transform: scale(1.1);
   }
   .right-block-topics__title:hover {
